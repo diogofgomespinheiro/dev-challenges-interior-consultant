@@ -1,0 +1,39 @@
+@mixin crimson-light {
+  font-family: 'Crimson Pro';
+  font-weight: 200;
+}
+
+@mixin lora {
+  font-family: 'Lora';
+  font-style: normal;
+}
+
+@mixin lora-medium {
+  @include lora;
+  font-weight: 500;
+}
+
+@mixin lora-bold {
+  @include lora;
+  font-weight: 700;
+}
+
+@mixin monteserrat {
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+
+@mixin monteserrat-regular {
+  @include monteserrat;
+  font-weight: 400;
+}
+
+@mixin monteserrat-medium {
+  @include monteserrat;
+  font-weight: 500;
+}
+
+@mixin monteserrat-bold {
+  @include monteserrat;
+  font-weight: 700;
+}
