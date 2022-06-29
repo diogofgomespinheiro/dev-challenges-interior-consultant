@@ -1,16 +1,67 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import MainLayout from './components/MainLayout.vue';
+</script>
 
 <template>
-  <h1>Hello World</h1>
+  <MainLayout>Test</MainLayout>
 </template>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #181719;
+  --primary-text: #ffffff;
+  --secondary-text: #828282;
+}
+
+html,
+body,
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  height: 100%;
+}
+
+#app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: var(--background-color);
+  color: var(--primary-text);
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 1rem 'Montserrat', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 </style>
