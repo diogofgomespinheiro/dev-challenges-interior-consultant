@@ -1,9 +1,19 @@
 <script setup lang="ts">
 import MainLayout from './components/MainLayout.vue';
+import Card from './components/Card.vue';
 </script>
 
 <template>
-  <MainLayout>Test</MainLayout>
+  <MainLayout>
+    <Card
+      title="Designed in 2020 by <br> Aliza Webber"
+      :user="{
+        name: 'Aliza Webber',
+        profession: 'Interior designer',
+        profileImgSrc: '/assets/profile.png'
+      }"
+    />
+  </MainLayout>
 </template>
 
 <style>

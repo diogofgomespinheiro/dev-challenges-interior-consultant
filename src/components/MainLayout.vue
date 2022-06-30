@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <main class="main-container">
     <slot />
@@ -26,7 +24,7 @@
 }
 </style>
 
-<script>
+<script lang="ts">
 export default {
   name: 'MainLayout'
 };
