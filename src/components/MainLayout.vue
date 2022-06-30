@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
 
-  height: 100%;
+  flex: 1;
   padding: 20px;
 }
 

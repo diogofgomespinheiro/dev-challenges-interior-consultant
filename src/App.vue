@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import MainLayout from './components/MainLayout.vue';
 import Card from './components/Card.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import Card from './components/Card.vue';
       }"
     />
   </MainLayout>
+  <Footer />
 </template>
 
 <style>
@@ -27,6 +29,7 @@ import Card from './components/Card.vue';
   --background-color: #181719;
   --primary-text: #ffffff;
   --secondary-text: #828282;
+  --accent-text: #a9a9a9;
 }
 
 html,
@@ -34,6 +37,8 @@ body,
 #app {
   min-height: 100vh;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #app {
