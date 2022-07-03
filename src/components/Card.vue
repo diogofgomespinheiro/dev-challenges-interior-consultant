@@ -33,8 +33,9 @@ defineProps<Props>();
 <style>
 .card {
   padding: 1.25rem;
-  width: 300px;
+  width: 100%;
   background: var(--background-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card__title {
@@ -61,13 +62,13 @@ defineProps<Props>();
 }
 
 .card__user-name {
-  font-size: 0.75rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 .card__user-profession {
   margin-top: 0.375rem;
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   font-weight: 500;
   color: var(--secondary-text);
 }
@@ -75,12 +76,10 @@ defineProps<Props>();
 @media screen and (min-width: 768px) {
   .card {
     padding: 1.5rem;
-    width: 410px;
   }
 
   .card__title {
     margin-top: 1.25rem;
-    font-size: 1.5rem;
   }
 
   .card__user-img {
@@ -92,13 +91,8 @@ defineProps<Props>();
     margin-left: 1.25rem;
   }
 
-  .card__user-name {
-    font-size: 0.875rem;
-  }
-
   .card__user-profession {
     margin-top: 0.5rem;
-    font-size: 0.75rem;
   }
 }
 </style>
