@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="footer-container">
+  <footer class="footer-container">
     <span
       >created by
       <a
@@ -15,7 +15,7 @@
         >devChallenges.io</a
       ></span
     >
-  </div>
+  </footer>
 </template>
 
 <style>

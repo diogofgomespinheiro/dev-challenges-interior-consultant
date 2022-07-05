@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import MainLayout from './components/MainLayout.vue';
 import Card from './components/Card.vue';
+import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 </script>
 
 <template>
+  <Header />
   <MainLayout>
     <div class="main-content-wrapper">
       <div class="description-container">
@@ -99,9 +101,9 @@ a {
   justify-content: center;
 
   margin: 0 auto;
-  width: 90%;
   max-width: 1440px;
   gap: 2.5rem;
+  padding-bottom: 3.75rem;
 }
 
 .description-container > h1 {
@@ -124,6 +126,8 @@ a {
 
 .banner-container {
   position: relative;
+  max-width: 880px;
+  margin: 0 auto;
 }
 
 .card {
@@ -145,6 +149,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 0;
   }
 
   .description-container,

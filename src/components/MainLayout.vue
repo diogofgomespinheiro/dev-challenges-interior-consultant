@@ -10,7 +10,13 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  padding: 20px;
+  padding: 0 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-container {
+    padding: 0 4.75rem;
+  }
 }
 </style>
 
